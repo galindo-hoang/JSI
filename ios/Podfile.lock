@@ -1,4 +1,13 @@
 PODS:
+  - AppTurboModules (0.0.1):
+    - RCT-Folly (= 2021.07.22.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-RCTFabric
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -754,6 +763,7 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - AppTurboModules (from `./../tm`)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -838,6 +848,8 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  AppTurboModules:
+    :path: "./../tm"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -916,6 +928,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppTurboModules: 4ae53032a0bc633831c4339b1fbdf24c9b74c0c4
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
@@ -940,7 +953,7 @@ SPEC CHECKSUMS:
   RCTTypeSafety: 279fc5861a89f0f37db3a585f27f971485b4b734
   React: 88307a9be3bd0e71a6822271cf28b84a587fb97f
   React-callinvoker: 35fb980c454104ebe82f0afb9826830089248e08
-  React-Codegen: 5870fe93f28a64af7d78a7e79b5e94b61d7f996d
+  React-Codegen: 2911abb095e732c19e4184331c352238248ed548
   React-Core: 385cb6fa78762c6409ff39faeb0dd9ad664b6e84
   React-CoreModules: c2b7db313b04d9b71954ffd55d0c2e46bc40e9fb
   React-cxxreact: 845fefb889132e5d004ff818f7a599e32c52e7d6
@@ -970,6 +983,6 @@ SPEC CHECKSUMS:
   Yoga: d56980c8914db0b51692f55533409e844b66133c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 360bbcaacbc871d84c47a75a22d0478cd65504f6
+PODFILE CHECKSUM: 005b5c73d19446366228285665e31a245f4a89a8
 
 COCOAPODS: 1.12.1
